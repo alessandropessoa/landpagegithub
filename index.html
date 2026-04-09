@@ -46,6 +46,39 @@
       width: 100%;
       height: 100%;
     }
+    /* Cards de projetos em destaque */
+    .project-highlight {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .project-highlight:hover {
+      transform: translateY(-5px);
+    }
+    .project-highlight img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .project-highlight h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .tech-badge {
+      display: inline-block;
+      background: #e9ecef;
+      color: #495057;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-right: 6px;
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 
@@ -76,6 +109,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
+        <li><a href="#featured-projects"><i class="bi bi-stars"></i> Projetos Destaque</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Trajetória</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfólio & Conquistas</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Serviços</a></li>
@@ -205,6 +239,117 @@
       </div>
     </section><!-- /Soft Skills Section -->
 
+    <!-- Nova Seção: Projetos em Destaque -->
+    <section id="featured-projects" class="featured-projects section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projetos em Destaque</h2>
+        <p>Iniciativas recentes que combinam engenharia de software, inteligência artificial e inovação.</p>
+      </div>
+      <div class="container">
+        <!-- Projeto 1: Simulador de Paraquedas -->
+        <div class="project-highlight" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <img src="portfolio/static/img/casnav-simulador-paraquedas.png" alt="Simulador de Paraquedas" class="img-fluid">
+            </div>
+            <div class="col-lg-7">
+              <h3>🪂 Simulador de Paraquedas (Projeto DELFOS)</h3>
+              <div class="mb-2">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flet</span>
+                <span class="tech-badge">Simulação Física</span>
+                <span class="tech-badge">SAD</span>
+              </div>
+              <p>Ferramenta interativa desenvolvida no CASNAV como parte do projeto DELFOS – Sistema de Apoio à Decisão do Ministério da Defesa. O simulador modela trajetórias de paraquedas com base em parâmetros ambientais e de carga, permitindo análise de cenários para planejamento operacional.</p>
+              <p>Apresentado no <strong>Rio Innovation Week 2025</strong>, a solução demonstra a aplicação prática de conceitos de física, matemática computacional e interface intuitiva construída inteiramente em Python (Flet).</p>
+              <div class="mt-3">
+                <a href="#" class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i> Ver demonstração</a>
+                <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank" class="btn btn-outline-secondary btn-sm"><i class="bi bi-link-45deg"></i> Saiba mais sobre o DELFOS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2: Call Graph Analyzer com LLM -->
+        <div class="project-highlight" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <!-- Mini galeria de 3 imagens lado a lado -->
+              <div class="row g-2">
+                <div class="col-4">
+                  <img src="portfolio/static/img/tela-login-anlisador-CoDe2CGA-criado.jpeg" alt="Tela de login" class="img-fluid rounded">
+                </div>
+                <div class="col-4">
+                  <img src="portfolio/static/img/grafo-gerado-a-partir-de-codigo-fonte-do-nginx.jpeg" alt="Grafo de chamadas" class="img-fluid rounded">
+                </div>
+                <div class="col-4">
+                  <img src="portfolio/static/img/logs-visulizacao.jpeg" alt="Visualização de logs" class="img-fluid rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h3>🧠 CoDe2CGA – Análise Inteligente de Código Fonte com LLM</h3>
+              <div class="mb-2">
+                <span class="tech-badge">LLM (GPT/Gemini)</span>
+                <span class="tech-badge">NetworkX</span>
+                <span class="tech-badge">Flet</span>
+                <span class="tech-badge">AST (Abstract Syntax Tree)</span>
+              </div>
+              <p>Ferramenta de engenharia de software que utiliza modelos de linguagem de grande escala (LLMs) para gerar grafos de chamadas (call graphs) a partir do código fonte. O sistema extrai a estrutura do programa, calcula métricas de complexidade ciclomática e identifica dependências críticas, auxiliando na manutenção e refatoração de sistemas legados.</p>
+              <p>O frontend multiplataforma foi desenvolvido com <strong>Flet</strong> (Flutter em Python), permitindo execução em desktop, web e dispositivos móveis. O backend processa o código fonte via análise sintática abstrata (AST) e integra-se com APIs de LLM para enriquecer a análise com explicações em linguagem natural.</p>
+              <div class="mt-3">
+                <a href="https://github.com/alessandropessoa/CoDe2CGA" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i> Código no GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3: ERP Inteligente para Construção Civil -->
+        <div class="project-highlight" data-aos="fade-up" data-aos-delay="200">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <img src="portfolio/static/img/portfolio/app-3.jpg" alt="ERP Construção Civil" class="img-fluid">
+            </div>
+            <div class="col-lg-7">
+              <h3>🏗️ ERP com Multiagente para Gestão de Obras</h3>
+              <div class="mb-2">
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Sistemas Multiagente</span>
+                <span class="tech-badge">Gantt/Curva S</span>
+              </div>
+              <p>Sistema completo de gestão empresarial (ERP) voltado para o setor de construção civil. Inclui módulos de cronograma físico-financeiro, quadro Kanban, gráfico de Gantt e curva S. O diferencial é a integração com um <strong>sistema multiagente</strong> que auxilia na elaboração automática de cronogramas, otimizando alocação de recursos e prazos.</p>
+              <p>Arquitetura conteinerizada com Docker, API REST para comunicação entre serviços e frontend responsivo construído com Django templates e Bootstrap.</p>
+              <div class="mt-3">
+                <a href="https://github.com/alessandropessoa/sisescola" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-github"></i> Repositório</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Projetos em Destaque -->
+
+    <!-- Seção de Vídeo (Simulador de Paraquedas) -->
+    <section id="video-demo" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Demonstração em Vídeo</h2>
+        <p>Conheça o Simulador de Paraquedas, ferramenta interativa desenvolvida para o projeto DELFOS e apresentada no Rio Innovation Week 2025.</p>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="text-center mt-3">
+              <i class="bi bi-youtube"></i> 
+              <a href="https://www.youtube.com/watch?v=4QXH0lLc1wg&t=832s" target="_blank">Assistir no YouTube (a partir do trecho relevante)</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Resume / Trajetória -->
     <section id="resume" class="resume section light-background">
       <div class="container section-title" data-aos="fade-up">
@@ -291,33 +436,49 @@
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             
-            <!-- Novo Projeto: Simulador de Paraquedas (CASNAV / RIW 2025) -->
+            <!-- Simulador de Paraquedas -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
               <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/casnav-simulador-paraquedas.png" class="img-fluid" alt="Simulador de Paraquedas - Rio Innovation Week 2025">
+                <img src="portfolio/static/img/casnav-simulador-paraquedas.png" class="img-fluid" alt="Simulador de Paraquedas">
                 <div class="portfolio-info">
                   <h4>Simulador de Paraquedas</h4>
-                  <p>Ferramenta interativa desenvolvida no CASNAV e apresentada no Rio Innovation Week 2025</p>
+                  <p>Projeto DELFOS / Rio Innovation Week 2025</p>
                   <a href="portfolio/static/img/casnav-simulador-paraquedas.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="#" class="details-link" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i></a>
                 </div>
               </div>
             </div>
 
-            <!-- Projeto: ERP para Construção Civil com Multiagente -->
+            <!-- Call Graph Analyzer (3 imagens em carrossel? Vamos usar uma principal com link para galeria) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-content h-100">
+                <img src="portfolio/static/img/grafo-gerado-a-partir-de-codigo-fonte-do-nginx.jpeg" class="img-fluid" alt="Call Graph Analyzer">
+                <div class="portfolio-info">
+                  <h4>CoDe2CGA – Análise de Código com LLM</h4>
+                  <p>Grafos de chamada + complexidade ciclomática</p>
+                  <a href="portfolio/static/img/grafo-gerado-a-partir-de-codigo-fonte-do-nginx.jpeg" data-gallery="portfolio-gallery" class="glightbox preview-link" data-gallery="code2cga"><i class="bi bi-zoom-in"></i></a>
+                  <!-- Adicionar imagens extras à galeria -->
+                  <a href="portfolio/static/img/tela-login-anlisador-CoDe2CGA-criado.jpeg" data-gallery="code2cga" class="d-none"></a>
+                  <a href="portfolio/static/img/logs-visulizacao.jpeg" data-gallery="code2cga" class="d-none"></a>
+                  <a href="https://github.com/alessandropessoa/CoDe2CGA" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ERP Construção Civil -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/app-3.jpg" class="img-fluid" alt="ERP Construção Civil">
                 <div class="portfolio-info">
                   <h4>ERP Obras + Multiagente</h4>
-                  <p>Sistema Django + IA para cronograma físico-financeiro</p>
+                  <p>Django + IA para cronograma físico-financeiro</p>
                   <a href="portfolio/static/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alessandropessoa/sisescola" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <!-- Publicação: IA para Guerras Híbridas (1º lugar Simpósio) -->
+            <!-- Publicação: IA para Guerras Híbridas -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publications">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/TempSimposio.png" class="img-fluid" alt="Simpósio MB">
@@ -330,33 +491,33 @@
               </div>
             </div>
 
-            <!-- Projeto: Desaprendizado de Máquina e LGPD -->
+            <!-- Desaprendizado de Máquina -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-publications">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/app-1.jpg" class="img-fluid" alt="Machine Unlearning">
                 <div class="portfolio-info">
                   <h4>Desaprendizado de Máquina & LGPD</h4>
-                  <p>SISA + BERT + Random Forest para conformidade com direito ao esquecimento</p>
+                  <p>SISA + BERT + Random Forest</p>
                   <a href="portfolio/static/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://www.researchgate.net/publication/394312377_Desaprendizado_de_Maquina_e_o_Direito_ao_Esquecimento_na_LGPD_Uma_Abordagem_Eficiente_com_SISA_BERT_e_Random_Forest" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <!-- Conquista: Classificação CNU (MGI ATI) -->
+            <!-- CNU Classificação -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-achievements">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/MinistMGI.png" class="img-fluid" alt="CNU Classificação">
                 <div class="portfolio-info">
                   <h4>CNU 2024 – Analista em TI (MGI)</h4>
-                  <p>Classificado entre os 6,1% melhores desempenhos do maior concurso público do país</p>
+                  <p>Classificado entre os 6,1% melhores desempenhos</p>
                   <a href="portfolio/static/img/portfolio/ProvaCNUATI1prioridade.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="#" class="details-link"><i class="bi bi-trophy"></i></a>
                 </div>
               </div>
             </div>
 
-            <!-- Publicação: Convite Revista Vitória nas Sombras -->
+            <!-- Convite Revista -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publications">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/revistaCapa.png" class="img-fluid" alt="Revista Vitória nas Sombras">
@@ -369,46 +530,12 @@
               </div>
             </div>
 
-            <!-- Projeto: Agente de Análise de Código com LLM + Flet -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/app-1.jpg" class="img-fluid" alt="Call Graph Analyzer">
-                <div class="portfolio-info">
-                  <h4>Agente de Call Graph Analysis</h4>
-                  <p>LLM + NetworkX + Flet para análise de complexidade ciclomática</p>
-                  <a href="portfolio/static/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-
           </div><!-- End Portfolio Container -->
         </div>
       </div>
     </section><!-- /Portfolio Section -->
 
-    <!-- Seção de Destaque: Vídeo do Simulador de Paraquedas -->
-    <section id="video-demo" class="services section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Demonstração em Vídeo</h2>
-        <p>Conheça o Simulador de Paraquedas, ferramenta interativa desenvolvida para o projeto DELFOS e apresentada no Rio Innovation Week 2025.</p>
-      </div>
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p class="text-center mt-3">
-              <i class="bi bi-youtube"></i> 
-              <a href="https://www.youtube.com/watch?v=4QXH0lLc1wg&t=832s" target="_blank">Assistir no YouTube (a partir do trecho relevante)</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal para o vídeo (caso o usuário clique no ícone de play no portfólio) -->
+    <!-- Modal para o vídeo (Simulador de Paraquedas) -->
     <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-dark">
@@ -589,9 +716,14 @@
 
   <script src="portfolio/static/js/main.js"></script>
 
-  <!-- Script para abrir modal ao clicar no ícone de play (garante que o Bootstrap Modal funcione) -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Configuração da galeria GLightbox para itens com data-gallery="code2cga"
+      const lightbox = GLightbox({
+        selector: '[data-gallery="code2cga"]'
+      });
+      
+      // Abrir modal de vídeo ao clicar nos links com data-bs-toggle="modal"
       const playLinks = document.querySelectorAll('.details-link[data-bs-toggle="modal"]');
       playLinks.forEach(link => {
         link.addEventListener('click', function(e) {

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Alessandro - Data and Defense</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Alessandro Pessoa | Data Science & AI Engineering</title>
+  <meta name="description" content="Portfólio profissional de Alessandro Pessoa — Cientista de Dados, Engenheiro de IA e Desenvolvedor Python. Soluções ponta a ponta em dados e inteligência artificial.">
+  <meta name="keywords" content="Data Science, Machine Learning, Inteligência Artificial, Python, Django, NLP, LLM, MLOps, Engenharia de Dados, Big Data, Analytics">
 
   <!-- Favicons -->
   <link href="portfolio/static/img/favicon.ico" rel="icon">
@@ -27,993 +27,483 @@
   <!-- Main CSS File -->
   <link href="portfolio/static/css/main.css" rel="stylesheet">
 
-
+  <!-- Estilo adicional para ícone do ResearchGate (caso não tenha no bootstrap-icons) -->
+  <style>
+    /* fallback para researchgate icon */
+    .bi-researchgate::before {
+      content: "\1F4DA"; /* livro como placeholder, melhor usar imagem ou svg real */
+      font-weight: 400;
+    }
+  </style>
 </head>
 
-<body class="index-page" >
+<body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="portfolio/static/img/imgJTernoIAjpg.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="portfolio/static/img/imgJTernoIAjpg.jpg" alt="Alessandro Pessoa" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="portfolio/static/img/logo.png" alt=""> -->
       <h1 class="sitename">Alessandro Pessoa</h1>
     </a>
 
     <div class="social-links text-center">
-      <a href=" http://lattes.cnpq.br/7763042368485199" class="lattes" target="_blank">
+      <a href="http://lattes.cnpq.br/7763042368485199" class="lattes" target="_blank" title="Currículo Lattes">
         <i class="bi bi-file-earmark-text"></i>
-    </a>
-    <a href="https://github.com/alessandropessoa/" class="youtube" target="_blank"><i class="bi bi-github"></i></a>
-
-      <a href="https://www.youtube.com/@alessandropessoa1037" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
-      <a href="https://www.linkedin.com/in/alessandro-pessoa-31774039/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </a>
+      <a href="https://github.com/alessandropessoa/" class="github" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Alessandro-Da-Conceicao-Barreto" class="researchgate" target="_blank" title="ResearchGate"><i class="bi bi-journal-text"></i></a>
+      <a href="https://www.youtube.com/@alessandropessoa1037" class="youtube" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/alessandro-pessoa-31774039/" class="linkedin" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> Sobre</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resumo</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Trajetória</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfólio & Conquistas</a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Serviços</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Artigos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Publicações</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Artigos </a></li>
-            <!--li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li-->
-            <li><a href="IAcomoTecnologiaGH.html">Publicações no Linkedin</a></li>
-            <!--li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li-->
+            <li><a href="https://www.researchgate.net/publication/401641531_Metodologia_de_Construcao_da_Arquitetura_de_Software_com_Apoio_de_Modelos_de_Linguagem_Uma_Abordagem_Hibrida_Integrando_DSR_GQM_e_Design_Thinking" target="_blank">Metodologia de Arquitetura com LLMs</a></li>
+            <li><a href="https://www.researchgate.net/publication/394613856_Cognitivo_Humano_Expandido_Curva_J_e_o_Neo-Humano_A_Ascensao_da_Sinergia_com_a_Inteligencia_Artificial" target="_blank">Cognitivo Humano Expandido</a></li>
+            <li><a href="https://www.researchgate.net/publication/394312377_Desaprendizado_de_Maquina_e_o_Direito_ao_Esquecimento_na_LGPD_Uma_Abordagem_Eficiente_com_SISA_BERT_e_Random_Forest" target="_blank">Desaprendizado de Máquina e LGPD</a></li>
+            <li><a href="https://www.researchgate.net/publication/392196516_Da_Teoria_a_Pratica_Metodologias_de_Treinamento_para_Prototipagem_Eficiente_de_Modelos_de_Arvore_de_Decisao" target="_blank">Metodologias para Árvore de Decisão</a></li>
+            <li><a href="https://www.researchgate.net/publication/390916244_Inteligencia_Artificial_como_Tecnologia_para_Guerras_Hibridas_Artificial_Intelligence_as_a_Technology_for_Hybrid_Warfare" target="_blank">IA para Guerras Híbridas</a></li>
+            <li><a href="IAcomoTecnologiaGH.html">Publicações no LinkedIn</a></li>
           </ul>
         </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contato</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <img src="portfolio/static/img/imgJustoCasa01_cod02.jpg" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Alessandro Pessoa</h2>
-        <p>Eu sou <span class="typed" data-typed-items="Data Science, Desenvolvedor Python, Engenheiro de Big Data">Cientista de Dados</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>Eu sou <span class="typed" data-typed-items="Cientista de Dados, Engenheiro de IA, Desenvolvedor Python, Arquiteto de Soluções Data-driven">Cientista de Dados</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
-
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Sobre</h2>
-        <p>
-          Atualmente é mestrando em Computação na Universidade Federal Fluminense (UFF), com foco na linha de pesquisa em Ciência de Dados e Inteligência Artificial. 
-          Possui MBA em Ciência de Dados e Machine Learning pela XP Educação, graduação em Ciência de Dados pela Universidade Anhanguera e formação técnica em Automação e Controle Industrial 
-          pelo SENAI-CETIND Bahia, onde atuou como bolsista de iniciação técnica (PIBIT).
-
-Desenvolveu suas principais atividades profissionais na indústria de petróleo, na empresa PetroReconcavo, onde atuou como técnico em instrumentação industrial júnior. Também trabalhou na View Engenharia como técnico em automação, com foco na programação e manutenção de CLPs Siemens S7. Na multinacional francesa Alstom Power, atuou como técnico pleno. Em 2013, ingressou na Marinha do Brasil como sargento do QTPA, participando do programa de submarinos, com passagens pelo Centro de Instrução Almirante Átila Monteiro Aché (CIAMA), Navio-Tanque Almirante Gastão Motta (NTAlteGMotta), Comando-em-Chefe da Esquadra (COMEMCH) e Centro de Apoio a Sistemas Operativos (CASOP).
-
-Atualmente está destacado no CoNavOpEsp, onde desenvolve e testa uma solução de inteligência artificial usando LLM's para análise do ambiente infomracional, para operações da informação e operações psicologicas.
- Minha paixão é transformar dados em insights valiosos para negócios e pesquisa. Tenho experiência em trabalhar com modelos preditivos, análise de grandes volumes de dados e inteligência artificial.
-
-          Estou disponível para consultoria em projetos de ciência de dados, auxiliando empresas a tirar proveito do poder dos dados para melhorar decisões estratégicas. Além disso, estou interessado em colaborar com projetos de pesquisa em Ciência e Tecnologia, aplicando soluções de ponta em problemas complexos.          
+        <p class="fst-italic">
+          Transformo dados brutos em inteligência acionável. Com mais de 6 anos de experiência prática em Ciência de Dados e Machine Learning, construo soluções ponta a ponta — da arquitetura de dados ao deploy de modelos — sempre alinhadas à geração de valor para o negócio.
         </p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
             <img src="portfolio/static/img/imgJustoCafe01.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Cientista de Dados &amp; Desenvolvedor Web Python/Django.</h2>
-            <p class="fst-italic py-3">
-              Apaixonado pelo mundo de dados e IA. È pai de duas lindas princesas, é Cristão em atitudes e cosmovisão. Empreendedor participe do Minitério RECRIE da Igreja Bola de Neve.
-              E sobre tudo grato a Deus por ser pai,amigo e socorro bem presente na hora da angustia. 
-
-              Errar pequeno, corrigir rápido e adaptar-se ao ambiente!<br/>
-
-              Vamos Para cima!
+            <h2>Data Scientist & AI Engineer</h2>
+            <p class="py-2">
+              Minha trajetória começou em 2008 com cursos técnicos em redes e manutenção de computadores, evoluindo para Automação Industrial e atuação em empresas como PetroReconcavo, View Engenharia e Alstom Power. Em 2013, ingressei na Marinha do Brasil como especialista em Automação para o programa de submarinos nucleares.
+            </p>
+            <p>
+              A partir de 2016, direcionei minha carreira para desenvolvimento de software e IoT, criando sistemas web para integração de dispositivos industriais. Em 2019, migrei definitivamente para Ciência de Dados, área na qual obtive graduação, MBA e atualmente finalizo o Mestrado em Computação na UFF, com foco em Modelagem Neural e Processamento de Linguagem Natural.
+            </p>
+            <p class="fst-italic">
+              Apaixonado por resolver problemas complexos com rigor científico e boas práticas de engenharia. Acredito em times colaborativos, metodologias ágeis e na aplicação ética da Inteligência Artificial.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>27 Fev 1991</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Estado:</strong> <span>RJ, BRA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nascimento:</strong> <span>27 Fev 1991</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Localização:</strong> <span>Rio de Janeiro, Brasil</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>33 anos</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>33</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Escolaridade:</strong> <span>Pós-Graduado</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Formação:</strong> <span>Mestrando em Computação (UFF)</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alessandro-pessoa@hotmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponivel</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance/Consultoria:</strong> <span>Disponível</span></li>
                 </ul>
               </div>
             </div>
-
+            <p class="mt-3">
+              <i class="bi bi-quote"></i> Errar pequeno, corrigir rápido e adaptar-se ao ambiente.
+            </p>
           </div>
         </div>
-
       </div>
-
     </section><!-- /About Section -->
 
- 
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
+    <!-- Hard Skills Section -->
     <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Hard Skill</h2>
-        <p>Proficiência em Python com forte domínio de bibliotecas como Pandas e Scikit-learn. Experiência em plataformas como Databricks e Spark. Habilidades em desenvolvimento web com HTML e CSS, além de expertise em pré-processamento de dados, CRISP-DM, e técnicas de análise diagnóstica, preditiva e prognóstica. Conhecimento prático na aplicação da LGPD em projetos de dados.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Pandas e Spark</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>HTML, CSS e JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Clustering</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Validação Cruzada e HoldOut</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Avaliação de Modelos</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Streamlit</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Git</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>NLP Sumarização</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-            <div class="progress">
-              <span class="skill"><span>NLP Análise de Polaridade</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>NLP FINE TUNE</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Django/CMS</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Docker</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
+        <h2>Hard Skills</h2>
+        <p>Domínio avançado em Python e ecossistema de dados (Pandas, Scikit-learn, Spark, Kedro). Experiência sólida em desenvolvimento de pipelines MLOps, deploy de modelos, NLP com LLMs (fine‑tuning, RAG) e engenharia de software aplicada a dados.</p>
       </div>
-
-    </section><!-- /Skills Section -->
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Soft Skill</h2>
-        <p>Profissional com sólida capacidade decisória, espírito de equipe e habilidades analíticas refinadas, focado em solucionar problemas complexos com precisão. Autodidata, busco continuamente aprimorar meus conhecimentos e habilidades para agregar valor em ambientes colaborativos e orientados a resultados.</p>
-      </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row skills-content skills-animation">
-
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Capacidade Análitica</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Espírito de Corpo</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Disciplina</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            <div class="progress"><span class="skill"><span>Python (Pandas, Scikit-learn, Kedro)</span> <i class="val">95%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:95%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Spark / PySpark</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:85%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Django / DRF / CMS</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:80%"></div></div></div>
+            <div class="progress"><span class="skill"><span>MLOps (MLflow, DVC, Docker)</span> <i class="val">75%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:75%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Validação Cruzada / Métricas</span> <i class="val">90%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:90%"></div></div></div>
           </div>
-
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Indivíduos e interações mais que processos  </span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Adaptabilidade</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Colaboração</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            <div class="progress"><span class="skill"><span>NLP (Transformers, BERT, LLMs)</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:85%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Fine‑tuning & RAG</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:80%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Streamlit / Flet (Frontend Python)</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:80%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Git / CI-CD</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:85%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Banco de Dados (SQL, MongoDB)</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:80%"></div></div></div>
           </div>
-
         </div>
-
       </div>
+    </section><!-- /Hard Skills Section -->
 
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
+    <!-- Soft Skills Section -->
+    <section id="soft-skills" class="skills section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resumo</h2>
-        <p>A palavra de ordem é gerar valor com dados, construir soluções que solidifiquem a cultura Data-driven. </p>
-        <p>
-          Profissional em 'T' com uma trajetória diversificada que começou na manutenção de micros e redes de computadores, evoluindo para uma ampla experiência em automação industrial. Em 2020, decidi mergulhar no universo dos dados, combinando minha experiência em programação Python, desenvolvida desde 2016 para projetos de IoT (Raspberry Pi, Arduino, ESP-32, NodeMCU), com um intenso foco em machine learning. Com uma especialização contínua na área, trago soluções inovadoras que conectam a tecnologia de automação com o poder da inteligência artificial.
-        </p>
-      </div><!-- End Section Title -->
+        <h2>Soft Skills</h2>
+        <p>Capacidade analítica aguçada, comunicação clara e espírito de colaboração. Adaptabilidade e disciplina adquiridas em ambientes militares e industriais, aliadas à autonomia intelectual para aprendizado contínuo.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress"><span class="skill"><span>Pensamento Analítico</span> <i class="val">95%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:95%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Trabalho em Equipe</span> <i class="val">100%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:100%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Disciplina e Foco</span> <i class="val">90%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:90%"></div></div></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress"><span class="skill"><span>Adaptabilidade</span> <i class="val">95%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:95%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Comunicação Técnica</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:85%"></div></div></div>
+            <div class="progress"><span class="skill"><span>Resolução de Problemas</span> <i class="val">95%</i></span><div class="progress-bar-wrap"><div class="progress-bar" style="width:95%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Soft Skills Section -->
 
+    <!-- Resume / Trajetória -->
+    <section id="resume" class="resume section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Trajetória Profissional & Acadêmica</h2>
+        <p>Uma combinação de fundamentos técnicos sólidos, experiência em ambientes de missão crítica e especialização contínua em IA e dados.</p>
+      </div>
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumario</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Marinha do Brasil</h4>
-              <p><em>Atividades de Manutenção de Hardware e software em navios. Instalação e configuração de software e Hardware, automação industrial, desnvolvimento de software 
-                e ciência de dados.  </em></p>
-              <ul>
-                <li>2013 - ATUAL</li>
-              </ul>
+            <h3 class="resume-title">Formação</h3>
+            <div class="resume-item">
+              <h4>Mestrado em Computação</h4>
+              <h5>2024 – 2026 (previsto)</h5>
+              <p><em>Universidade Federal Fluminense (UFF)</em></p>
+              <p>Linha de pesquisa: Modelagem Neural e Processamento de Linguagem Natural. Desenvolvimento de soluções com LLMs para análise de ambiente informacional e operações da informação.</p>
             </div>
-            
-            <!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Educação</h3>
             <div class="resume-item">
-              <h4>Mestrado Ciência da Computação (UFF)</h4>
-              <h5>Univerdisade Federal Fluminense: 2024 - 2026</h5>
-              <p><em>Linha de pesquisa Modelagem Neural</em></p>
-              <p>Construir soluções com processamento de linguagem natural, como análise de polaridade, sumarização, reconhecimento de entidades nomeadas, Q&A. Uilizando 
-                treinamento continuado, prétreinamento, fine tune, extração de features.     </p>
-            </div><!-- Edn Resume Item -->
-
+              <h4>MBA em Ciência de Dados e Machine Learning</h4>
+              <h5>2023 – 2024</h5>
+              <p><em>XP Educação</em></p>
+              <p>Projeto de conclusão: sistema de análise de ambiente informacional com modelos neurais para defesa nacional.</p>
+            </div>
             <div class="resume-item">
-              <h4>Pós Graduação Lato Sensu Ciência de Dados e Machine Learning</h4>
-              <h5>2023 - 2024</h5>
-              <p><em>Projeto final foi uma aplicação para  sistema de defesa nacional que utiliza modelos neurais para análise do ambiente infomracional.</em></p>
-            
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graduação Lato Sensu Ciência de Dados</h4>
-              <h5>2021 - 2023</h5>            
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Curso Manutenção em rede Foundation Fieldbus</h4>
-              <h5>2011</h5>            
-            </div><!-- Edn Resume Item -->
-
+              <h4>Graduação em Ciência de Dados</h4>
+              <h5>2021 – 2023</h5>
+              <p><em>Universidade Anhanguera</em></p>
+            </div>
             <div class="resume-item">
               <h4>Técnico em Automação e Controle Industrial</h4>
-              <h5>2010 - 2011</h5>            
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Certificação CISCO</h4>
-              <h5>2008</h5>            
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Curso Redes e Manutenção de Microcomputadores</h4>
-              <h5>2008</h5>            
-            </div><!-- Edn Resume Item -->
+              <h5>2010 – 2011</h5>
+              <p><em>SENAI-CETIND (Bahia)</em> – Bolsista PIBIT</p>
+            </div>
           </div>
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experiencia Profissional </h3>
+            <h3 class="resume-title">Experiência Profissional</h3>
             <div class="resume-item">
-              <h4>Marinha do Brasil</h4>
-              <h5>2013 - Presente</h5>
-              <p><em>Militar -Segundo Sargento</em></p>
-            </div><!-- Edn Resume Item -->
-            <hr/>
+              <h4>Marinha do Brasil – CoNavOpEsp</h4>
+              <h5>2024 – Presente</h5>
+              <p><em>Segundo Sargento – Desenvolvimento de soluções de IA para operações de informação</em></p>
+              <p>Pesquisa e implementação de LLMs para análise do ambiente informacional, contribuindo para operações psicológicas e defesa cibernética.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Marinha do Brasil (diversas OM)</h4>
+              <h5>2013 – 2024</h5>
+              <p><em>Especialista em Automação Industrial</em></p>
+              <p>Atuação em manutenção de sistemas de controle, desenvolvimento de software para IoT e integração de sistemas navais.</p>
+            </div>
             <div class="resume-item">
               <h4>Alstom Power</h4>
-              <h5>2013 - 2013</h5>
+              <h5>2013</h5>
               <p><em>Técnico em Automação Pleno</em></p>
-            </div><!-- Edn Resume Item -->
-            <hr/>
+            </div>
             <div class="resume-item">
-              <h4>View Engenharia</h4>
-              <h5>2011 - 2013</h5>
-              <p><em>Técnico em Automação Industrial Junior II</em></p>
-              <p><em>Técnico em Automação Industrial Junior I</em></p>
-            </div><!-- Edn Resume Item -->
-            <hr/>
-            <div class="resume-item">
-              <h4>PetroReconcavo</h4>
-              <h5>2011 - 2011</h5>
-              <p><em>Técnico em instrumentação Industrial Junior I</em></p>
-            </div><!-- Edn Resume Item -->
+              <h4>View Engenharia / PetroReconcavo</h4>
+              <h5>2011 – 2013</h5>
+              <p><em>Técnico em Automação e Instrumentação</em></p>
+              <p>Programação de CLPs Siemens S7, manutenção de sistemas Foundation Fieldbus e projetos de instrumentação para indústria de petróleo.</p>
+            </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
+    <!-- Portfolio Section (Prêmios, Projetos e Conquistas) -->
+    <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio, Prêmios e Conquistas </h2>
-        <p>São alguns dos principais trabalhos e produtos  realizados recentemente.</p>
-        <ol>
-          <li> Classificado em 1º lugar com a submissão do artigo intitulado "INTELIGÊNCIA ARTIFICIAL COMO TECNOLOGIA PARA GUERRAS HÍBRIDAS" no Simpósio de Gestão do Conhecimento da MB 2024</li>
-          <li>Convidado para escrever artigo revista da Marinha do Brasil - Inteligência Artificial como tecnologia para Guerras Hibridas (Operações da Informação).</li>
-          <li>
-            Classificação no maior concurso Público realizado no Brasil até 2024 (CNU)
-            <ul>
-              <li>ORGÃO/CARGO/ESPECIALIDADE: MGI / Analista em Tecnologia da Informação (ATI) / Tecnologia da Informação</li>
-              <li>ORGÃO/CARGO/ESPECIALIDADE: MS / Tecnologista / Tecnologia da Informação</li>
-              <li>ORGÃO/CARGO/ESPECIALIDADE: IBGE / Tecnologista em Informações Geográficas e Estatísticas / Métodos
-                quantitativos</li>
-              <li>ORGÃO/CARGO/ESPECIALIDADE: MGI / Analista Técnico de Políticas Sociais - ATPS / Tecnologia da Informação</li>
-            </ul>
-          </li>
-          
-          <li>Diversos Modelos de Ciências Dados Construidos</li>
-          <li>Participação no SemEval 2025 Processamento de linguagem natural e LLM's<a href="https://propaganda.math.unipd.it/semeval2025task10/" target="_blank">TAREFA 10</a>   - International Workshop on Semantic Evaluation <a href="https://semeval.github.io/" target="_blank">LINK SEMEVAL 2025</a></li>
-        </ol>
-      </div><!-- End Section Title -->
-
+        <h2>Projetos, Publicações e Conquistas</h2>
+        <p>Destaques da minha atuação em pesquisa aplicada, desenvolvimento de soluções e reconhecimentos recentes.</p>
+      </div>
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">TODOS</li>
-            <li data-filter=".filter-app">APP</li>
-            <li data-filter=".filter-product">Artigos e Convites</li>
-            <li data-filter=".filter-branding">Concursos Publicos Classificado</li>
-            <li data-filter=".filter-books">Eventos</li>
-          </ul><!-- End Portfolio Filters -->
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-projects">Projetos</li>
+            <li data-filter=".filter-publications">Publicações</li>
+            <li data-filter=".filter-achievements">Conquistas</li>
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Projeto: ERP para Construção Civil com Multiagente -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-content h-100">
+                <img src="portfolio/static/img/portfolio/app-3.jpg" class="img-fluid" alt="ERP Construção Civil">
+                <div class="portfolio-info">
+                  <h4>ERP Obras + Multiagente</h4>
+                  <p>Sistema Django + IA para cronograma físico-financeiro</p>
+                  <a href="portfolio/static/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/alessandropessoa/sisescola" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <!-- Publicação: IA para Guerras Híbridas (1º lugar Simpósio) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publications">
               <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="portfolio/static/img/portfolio/TempSimposio.png" class="img-fluid" alt="Simpósio MB">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Ecommerce c/ IA Brasa Dourada</p>
-                  <a href="portfolio/static/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/alessandropessoa/brasadourada" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>IA como Tecnologia para Guerras Híbridas</h4>
+                  <p>1º lugar no Simpósio de Gestão do Conhecimento da MB 2024</p>
+                  <a href="portfolio/static/img/portfolio/ResultadoSimposio.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio/static/documentos/04082024_artigoSImposio.pdf" target="_blank" class="details-link"><i class="bi bi-file-pdf"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- Projeto: Desaprendizado de Máquina e LGPD -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects filter-publications">
               <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/TempSimposio.png" class="img-fluid" alt="">
+                <img src="portfolio/static/img/portfolio/app-1.jpg" class="img-fluid" alt="Machine Unlearning">
                 <div class="portfolio-info">
-                  <h4>Artigo 1</h4>
-                  <p>Simpósio MB 1°colocado - IA como tecnologia para Guerras Hibridas</p>
-                  <a href="portfolio/static/img/portfolio/ResultadoSimposio.png" title="Simpósio MB 1°colocado - IA como tecnologia para Guerras Hibridas" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio/static/documentos/04082024_artigoSImposio.pdf" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Desaprendizado de Máquina & LGPD</h4>
+                  <p>SISA + BERT + Random Forest para conformidade com direito ao esquecimento</p>
+                  <a href="portfolio/static/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.researchgate.net/publication/394312377_Desaprendizado_de_Maquina_e_o_Direito_ao_Esquecimento_na_LGPD_Uma_Abordagem_Eficiente_com_SISA_BERT_e_Random_Forest" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <!-- Conquista: Classificação CNU (MGI ATI) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-achievements">
               <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/revistaCapa.png" class="img-fluid" alt="">
+                <img src="portfolio/static/img/portfolio/MinistMGI.png" class="img-fluid" alt="CNU Classificação">
                 <div class="portfolio-info">
-                  <h4>Convite 1</h4>
-                  <p>Convite para escrever artigo revista da Marinha do Brasil</p>
-                  <a href="portfolio/static/img/portfolio/revistaCapa.png" title="Revista Vitória nas sobras https://portaldeperiodicos.marinha.mil.br/index.php/vitorianassombras/issue/view/943" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio/static/documentos/Carta-Convite.pdf" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>CNU 2024 – Analista em TI (MGI)</h4>
+                  <p>Classificado entre os 6,1% melhores desempenhos do maior concurso público do país</p>
+                  <a href="portfolio/static/img/portfolio/ProvaCNUATI1prioridade.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link"><i class="bi bi-trophy"></i></a>
+                </div>
+              </div>
+            </div>
 
+            <!-- Publicação: Cognitivo Humano Expandido -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publications">
+              <div class="portfolio-content h-100">
+                <img src="portfolio/static/img/portfolio/revistaCapa.png" class="img-fluid" alt="Revista Vitória nas Sombras">
+                <div class="portfolio-info">
+                  <h4>Convite Revista Vitória nas Sombras</h4>
+                  <p>Artigo sobre IA e Operações de Informação</p>
+                  <a href="portfolio/static/img/portfolio/revistaCapa.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio/static/documentos/Carta-Convite.pdf" target="_blank" class="details-link"><i class="bi bi-file-pdf"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <!-- Projeto: Agente de Análise de Código com LLM + Flet -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
               <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/MinistMGI.png" class="img-fluid" alt="">
+                <img src="portfolio/static/img/portfolio/app-1.jpg" class="img-fluid" alt="Call Graph Analyzer">
                 <div class="portfolio-info">
-                  <h4>Concursos Publicos Classificado </h4>
-                  <p>MGI ATPS - Tecnologia da Informação Classificado Ministrio Gestão e Inovação</p>
-                  <a href="portfolio/static/img/portfolio/ProvaCNU_ATPS10prioridae.png" title="MGI ATPS - Tecnologia da Informação " data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Agente de Call Graph Analysis</h4>
+                  <p>LLM + NetworkX + Flet para análise de complexidade ciclomática</p>
+                  <a href="portfolio/static/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link"><i class="bi bi-github"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/TempSimposio.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>EVENTOS</h4>
-                  <p>Simpósio Gestão do Conhecimento e IA</p>
-                  <a href="portfolio/static/img/portfolio/TempSimposio.png" title="Simpósio MB" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.marinha.mil.br/dpm/sgcmb2024" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="portfolio/static/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Artigo 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="portfolio/static/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/MinistMGI.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Concursos Publicos Classificado</h4>
-                  <p> Classificado Ministrio Gestão e Inovação em Tecnologia da Informação</p>
-                  <a href="portfolio/static/img/portfolio/ProvaCNUATI1prioridade.png" title="Neste concurso de inscreveram 2,1 milhões de pessoas para 6640 vagas e foram classificadas 59,7 mil pessoas das 970 mil que realizaram 
-                  a prova, o que coloca os classificados no rol dos 6,1% melhores desempenhos." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/MinistMGI.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Eventos/h4>
-                  <p>sgagaseg
-                
-                  </p>
-                  <a href="portfolio/static/img/portfolio/books-2.jpg" title="Concursos Publicos Classificado" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Aplicativo SisEscola</p>
-                  <a href="portfolio/static/img/portfolio/app-3.jpg" title="Aplicativo SisEscola, gerir seceratria escolar" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/alessandropessoa/sisescola" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-<!--
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="portfolio/static/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div> End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/IBGE.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Concursos Publicos Classificado</h4>
-                  <p>Classificado Tecnologista Métodos quantitativos</p>
-                  <a href="portfolio/static/img/portfolio/ProvaCNU7priotidade.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio/static/documentos/FundacaoCesgranrio.pdf" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/MinisterioSaude.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Concursos Publicos Classificado</h4>
-                  <p>Classificado Tecnologista Tecnologia da Informação</p>
-                  <a href="portfolio/static/img/portfolio/ProvaCNU_MS6Prioridade.png" title="Classificado para Tecnologista TI Ministério da Saúde" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio/static/documentos/FundacaoCesgranrio.pdf" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-<!-- 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="portfolio/static/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>EVENTOS</h4>
-                  <p>sadga</p>
-                  <a href="portfolio/static/img/portfolio/ProvaCNU7priotidade.png" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio/static/documentos/FundacaoCesgranrio.pdf" title="Mais Detalhes" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div>End Portfolio Item -->
+            </div>
 
           </div><!-- End Portfolio Container -->
-
         </div>
-
       </div>
-
     </section><!-- /Portfolio Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
+    <!-- Serviços -->
+    <section id="services" class="services section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Serviços</h2>
-        <p>Precisa gerar valor atrávés de tecnologia inteligência artificial. Entre contato!</p>
-      </div><!-- End Section Title -->
-
+        <h2>Serviços & Consultoria</h2>
+        <p>Transformo necessidades de negócio em soluções de dados robustas, escaláveis e éticas.</p>
+      </div>
       <div class="container">
-
         <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Treinamento </a></h4>
-              <p class="description">Treinamento em Análise de dados e cuidados preprocessamento dados e ETL</p>
+              <h4 class="title">Modelagem Preditiva & Explicativa</h4>
+              <p class="description">Construção de modelos de machine learning com rigor estatístico, validação e explicabilidade para suporte à decisão.</p>
             </div>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-robot"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Construção de Modelos Preditivos e Explocativos</a></h4>
-              <p class="description">Modelos capazes de predizer comportamentos,receitas e muitos mais com base em dados históricos</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Criação de Bases de Dados, Data Lake e LakeHouse  </a></h4>
-              <p class="description">Construção de bases de dados em MongoDb e Postgres.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Construção de ChatBots, assistentes virtuais</a></h4>
-              <p class="description">Construção de aplicações com LLM para reponder a perguntas especificas dos dados de sua empresa, projeto ou problema.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">DataViz e API</a></h4>
-              <p class="description">Construção de Dashboards para OLAP e API.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Integração com ChatGPT, Gemini, Copilot e demais </a></h4>
-              <p class="description">Integração de aplicações a plataformas de LLM com LangChain e outras arquiteturas</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Acadêmico</h2>
-        <p>Compartilhamento de Dados,apresentações e demais.<br/>
-        Na barra lateral desta página na opção "Artigos" também há conteudos e no icone do GitHub você também encontar uma diversidade de material. ;-)<br/>
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">  </a></h4>
-              <p class="description">Treinamento em Análise de dados e cuidados preprocessamento dados e ETL</p>
+              <h4 class="title">Soluções com LLMs & RAG</h4>
+              <p class="description">Desenvolvimento de assistentes inteligentes, chatbots corporativos e sistemas de Q&A sobre bases de conhecimento proprietárias.</p>
             </div>
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Construção de Modelos Preditivos e Explocativos</a></h4>
-              <p class="description">Modelos capazes de predizer comportamentos,receitas e muitos mais com base em dados históricos</p>
+              <h4 class="title">Arquitetura de Dados & MLOps</h4>
+              <p class="description">Criação de pipelines ETL/ELT, data lakes, versionamento de dados e modelos (DVC/MLflow) e deploy em containers.</p>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line"></i></div>
             <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Criação de Bases de Dados, Data Lake e LakeHouse  </a></h4>
-              <p class="description">Construção de bases de dados em MongoDb e Postgres.</p>
+              <h4 class="title">Dashboards & Visualização de Dados</h4>
+              <p class="description">Construção de painéis interativos com Streamlit, Power BI ou soluções web customizadas para monitoramento de KPIs.</p>
             </div>
-          </div><!-- End Service Item -->
-
-
+          </div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <h4 class="title">Conformidade LGPD em IA</h4>
+              <p class="description">Implementação de técnicas de desaprendizado de máquina (machine unlearning) para garantir o direito ao esquecimento.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+            <div>
+              <h4 class="title">Treinamentos Corporativos</h4>
+              <p class="description">Capacitação em análise de dados, boas práticas de machine learning e cultura data‑driven para equipes técnicas e de negócio.</p>
+            </div>
+          </div>
         </div>
-
       </div>
-
     </section><!-- /Services Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testemunhos</h2>
-        <p>É sobre gerar valor, construir soluções que agreaguem. Errar pequeno, corrigir rapido e se adapatar ao ambiente.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+        <h2>Reconhecimento</h2>
+        <p>Feedback de colegas, parceiros e instituições.</p>
+      </div>
+      <div class="container" data-aos="fade-up">
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
+              "autoplay": { "delay": 5000 },
               "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
+              "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
               "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
+                "320": { "slidesPerView": 1, "spaceBetween": 40 },
+                "1200": { "slidesPerView": 3, "spaceBetween": 1 }
               }
             }
           </script>
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span><b>ELA:</b> Que coisa incrivel isso. Adorei essa ideia. <br/>
-                    <b>EU:</b> A ideia é comelar a cruar uma mentalidae agíl de trabalho -Treinamento Curso TI.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <br/><br/><br/><br/><br/>
+                <p><i class="bi bi-quote quote-icon-left"></i> Que coisa incrível isso. Adorei essa ideia. <br>— Treinamento de TI <i class="bi bi-quote quote-icon-right"></i></p>
                 <img src="portfolio/static/img/testimonials/TestemunhoMarcele.jpeg" class="testimonial-img" alt="">
                 <h3>Marcele A.</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h4>CEO & Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span><b>ELE: </b>Boa tarde, tudo bem?
-
-                    Faço uma matéria com vc. Aprendizado de Máquina.
-                    
-                    Queria saber se vc pode me ajudar com uma dúvida na tarefa que termos que entregar amanhã.
-                    
-                    Eu preciso retirar os Outliers do modelo, certo? Como faço isso? Obrigado!. <br/>
-                     <b>EU:</b>Sempre meu amigo</span><br/>
-                     <b>ELE: </b>Cara, vc já me ajudou muito. De verdade.
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                <p><i class="bi bi-quote quote-icon-left"></i> Cara, você já me ajudou muito. De verdade. <br>— Colega de Mestrado UFF <i class="bi bi-quote quote-icon-right"></i></p>
                 <img src="portfolio/static/img/testimonials/TiagoMestrado.jpeg" class="testimonial-img" alt="">
                 <h3>Thiago</h3>
-                <h4>Mestrado UFF</h4>
+                <h4>Mestrando UFF</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                    <b>Marinha do Brasil Direitoria de Pessoal da Marinha:</b>
-                    <span>Prezado 2SG ALESSANDRO PESSOA DA CONCEIÇÃO,
-                    Agradecemos sua participação e parabenizamos por ter se classificado em 1º lugar com a submissão do artigo intitulado "INTELIGÊNCIA ARTIFICIAL
-                     COMO TECNOLOGIA PARA GUERRAS HÍBRIDAS" no Simpósio de Gestão do Conhecimento da MB 2024. Reforçamos que sua apresentação será na Sessão 6, de 
-                     acordo com a programação do evento. </span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                <p><i class="bi bi-quote quote-icon-left"></i> Parabenizamos por ter se classificado em 1º lugar com o artigo "IA como Tecnologia para Guerras Híbridas". <i class="bi bi-quote quote-icon-right"></i></p>
                 <img src="portfolio/static/img/testimonials/nova-logomarca-mb.jpg" class="testimonial-img" alt="">
                 <h3>Marinha do Brasil</h3>
+                <h4>Diretoria de Pessoal</h4>
               </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                    <b>Marinha do Brasil - Comando Naval de Operações Especiais:</b>
-                    <span>É com grande entusiasmo que lhe estendemos um convite especial para se
-                      juntar ao seleto grupo de colaboradores da "Revista Vitória nas Sombras". Esta publicação, uma
-                      iniciativa do Comando Naval de Operações Especiais, tem como objetivo explorar e divulgar as
-                      operações especiais e de informação no âmbito da Marinha do Brasil.<br/>
-                      Sendo assim, tenho o prazer de convidá-lo a contribuir com sua experiência
-                      operacional na aplicação do Poder Naval, escrevendo um artigo para esta edição da revista. </span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="portfolio/static/img/testimonials/ConviteEscreverRevista.png" class="testimonial-img" alt="">
-                <h3>Marinha do Brasil</h3>
-              </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
-    </section><!-- /Testimonials Section -->
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
+    <section id="contact" class="contact section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
-        <p>Entre em contato!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+        <p>Vamos conversar sobre como posso ajudar seu projeto ou empresa.</p>
+      </div>
+      <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-
           <div class="col-lg-5">
-
             <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Endereço</h3>
-                  <p>Brasil, RJ</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+55 21 96545-6006</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email </h3>
-                  <p>alessandro-pessoa@hotmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="info-item d-flex"><i class="bi bi-geo-alt flex-shrink-0"></i><div><h3>Localização</h3><p>Rio de Janeiro, Brasil</p></div></div>
+              <div class="info-item d-flex"><i class="bi bi-whatsapp flex-shrink-0"></i><div><h3>WhatsApp</h3><p>+55 21 96545-6006</p></div></div>
+              <div class="info-item d-flex"><i class="bi bi-envelope flex-shrink-0"></i><div><h3>Email</h3><p>alessandro-pessoa@hotmail.com</p></div></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.356151478678!2d-43.2126754!3d-22.9035393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1713200000000" frameborder="0" style="border:0; width:100%; height:270px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
-
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
+                <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Seu Nome" required></div>
+                <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Seu Email" required></div>
+                <div class="col-md-12"><input type="text" class="form-control" name="subject" placeholder="Assunto" required></div>
+                <div class="col-md-12"><textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required></textarea></div>
+                <div class="col-md-12 text-center"><button type="submit">Enviar Mensagem</button></div>
               </div>
             </form>
-          </div><!-- End Contact Form -->
-
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
-
-
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>2024</span> <strong>Alessandro Pessoa</strong> - Transformando dados em decisões inteligentes</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="portfolio/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="portfolio/static/vendor/php-email-form/validate.js"></script>
   <script src="portfolio/static/vendor/aos/aos.js"></script>
   <script src="portfolio/static/vendor/typed.js/typed.umd.js"></script>
   <script src="portfolio/static/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1022,10 +512,8 @@ Atualmente está destacado no CoNavOpEsp, onde desenvolve e testa uma solução 
   <script src="portfolio/static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="portfolio/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="portfolio/static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="portfolio/static/vendor/php-email-form/validate.js"></script>
 
-  <!-- Main JS File -->
   <script src="portfolio/static/js/main.js"></script>
-
 </body>
-
 </html>

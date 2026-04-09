@@ -1153,7 +1153,7 @@
                 <div class="tl-body">
                   <p class="tl-period">2024 – Presente</p>
                   <h4>Mestrado em Computação (UFF) & CASNAV: Onde Ciência e Defesa se Encontram</h4>
-                  <p>Atualmente em fase final do Mestrado em Computação na UFF, com linha de pesquisa em Modelagem Neural e Processamento de Linguagem Natural. No CASNAV, atuo como Cientista de Dados no Projeto DELFOS — SAD estratégico para o Ministério da Defesa —, desenvolvendo simuladores, pipelines de dados e protótipos de IA para cenários operacionais. O Simulador de Paraquedas, desenvolvido com Python/Flet e baseado em física computacional, foi apresentado no <strong>Rio Innovation Week 2025</strong> como demonstração das capacidades analíticas do projeto.</p>
+                  <p>Atualmente em fase final do Mestrado em Computação na UFF, com linha de pesquisa em Modelagem Neural e Processamento de Linguagem Natural. No CASNAV, atuo como Cientista de Dados no Projeto DELFOS — SAD estratégico para o Ministério da Defesa —,pipelines de dados e protótipos de IA para cenários operacionais. 
                   <div class="tl-tags">
                     <span class="tl-tag">NLP / Transformers</span>
                     <span class="tl-tag">CASNAV / DELFOS</span>
@@ -1183,6 +1183,7 @@
         </div>
         <div class="skill-grid mb-5">
           <div class="skill-card"><div class="skill-header"><span class="skill-name">Python · Pandas · Scikit-learn · Kedro</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="width:95%"></div></div></div>
+          <div class="skill-card"><div class="skill-header"><span class="skill-name">Linux  · Bash  · Leitura de Sensores /etc/dev </span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="width:95%"></div></div></div>
           <div class="skill-card"><div class="skill-header"><span class="skill-name">NLP · Transformers · BERT · LLMs</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div></div>
           <div class="skill-card"><div class="skill-header"><span class="skill-name">Fine-tuning · RAG · DSPy</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div></div>
           <div class="skill-card"><div class="skill-header"><span class="skill-name">MLOps · MLflow · DVC · Docker</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div></div>
@@ -1259,46 +1260,84 @@
           <p>Soluções que combinam engenharia robusta, inteligência artificial e impacto real — do setor público à indústria privada.</p>
         </div>
 
-        <!-- Projeto 1: DELFOS/Paraquedas -->
+        <!-- Projeto 1: DELFOS (CORRIGIDO) -->
         <div class="project-card" data-aos="fade-up">
           <div class="row g-0">
             <div class="col-lg-5 project-media">
-              <img src="portfolio/static/img/casnav-simulador-paraquedas.png" alt="Simulador de Paraquedas DELFOS" style="min-height:320px;object-fit:cover;width:100%;border-radius:16px 0 0 16px;">
+              <img src="portfolio/static/img/tela-login-anlisador-CoDe2CGA-criado.jpeg" alt="Projeto DELFOS" style="min-height:320px;object-fit:cover;width:100%;border-radius:16px 0 0 16px;">
             </div>
             <div class="col-lg-7 project-body">
               <p class="project-number">// Projeto 01 · Defesa Nacional</p>
-              <h3>Simulador de Paraquedas — Projeto DELFOS</h3>
+              <h3>Projeto DELFOS — Sistema de Apoio à Decisão Estratégico</h3>
               <div class="mb-3">
                 <span class="tech-badge">Python</span>
-                <span class="tech-badge">Flet</span>
-                <span class="tech-badge">Física Computacional</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">MSSQL Server</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">LLMs</span>
+                <span class="tech-badge">LGPD</span>
                 <span class="tech-badge">SAD</span>
                 <span class="tech-badge">CASNAV</span>
               </div>
-              <p>Desenvolvido no CASNAV como componente do Projeto DELFOS — Sistema de Apoio à Decisão estratégico do Ministério da Defesa —, esta ferramenta modela trajetórias de paraquedas a partir de parâmetros ambientais (vento, altitude, pressão atmosférica) e de carga, gerando análises de cenários para planejamento operacional em tempo real.</p>
-              <p>Construído integralmente em Python com o framework Flet (wrapper Python para Flutter), o que permite compilação nativa para desktop, web, iOS e Android sem alteração de código. A integração de equações de movimento com resolução numérica iterativa demonstra como física, matemática computacional e engenharia de software se complementam em sistemas de suporte à decisão de missão crítica.</p>
-              <p><strong>Destaque:</strong> Apresentado no <em>Rio Innovation Week 2025</em> como caso de uso do Projeto DELFOS.</p>
+              <p><strong>DELFOS</strong> é um Sistema de Apoio à Decisão (SAD) estratégico e gerencial desenvolvido para o Ministério da Defesa. Trata-se de uma plataforma integrada que combina múltiplas camadas de inteligência de dados para suportar decisões de alto impacto.</p>
+              <p>No componente de dados, atuo diretamente na implementação e protopipação  de:</p>
+              <ul style="color:#4a5568;font-size:0.92rem;line-height:1.8;margin-bottom:10px;">
+                <li><strong>Conformidade LGPD:</strong> Pipelines com governança e anonimização de dados sensíveis, incluindo arquitetura para machine unlearning (direito ao esquecimento).</li>
+                <li><strong>IA para Análise de Código Legado:</strong> Módulo que utiliza LLMs para compreender sistemas antigos sem documentação, gerando grafos de dependência e identificando pontos críticos de manutenção.</li>
+                <li><strong>Dashboards MVP com Streamlit:</strong> Interfaces rápidas para validação de hipóteses e visualização de indicadores gerenciais.</li>
+                <li><strong>Machine Learning para os modulos de negocio:</strong> Modelos preditivos para validação de dados, identificação de padrões anômalos e detecção de fraudes em benefícios de aposentadoria e pensões — um dos componentes mais sensíveis do sistema.</li>
+              </ul>
+              <p>O projeto segue metodologias estruturadas (DSR, GQM) e boas práticas de MLOps, garantindo rastreabilidade e reprodutibilidade em um ambiente de missão crítica.</p>
               <div class="project-actions">
-                <a href="#" class="btn-teal" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i> Ver Demo</a>
-                <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank" class="btn-outline-teal"><i class="bi bi-link-45deg"></i> Sobre o DELFOS</a>
+                <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank" class="btn-teal"><i class="bi bi-link-45deg"></i> Saiba mais sobre o DELFOS</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Projeto 2: Sistema de Análise de Mercado / Storytelling -->
+        <!-- Projeto 2: Simulador de Paraquedas (projeto independente) -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="50">
           <div class="row g-0 flex-lg-row-reverse">
             <div class="col-lg-5 project-media">
+              <img src="portfolio/static/img/casnav-simulador-paraquedas.png" alt="Simulador de Paraquedas" style="min-height:320px;object-fit:cover;width:100%;border-radius:0 16px 16px 0;">
+            </div>
+            <div class="col-lg-7 project-body">
+              <p class="project-number">// Projeto 02 · Simulação Física</p>
+              <h3>Simulador de Paraquedas (Projeto Independente)</h3>
+              <div class="mb-3">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Física Computacional</span>
+                <span class="tech-badge">Flet</span>
+                <span class="tech-badge">Simulação Numérica</span>
+              </div>
+              <p>Ferramenta interativa desenvolvida originalmente em outra divisão, que simula trajetórias de paraquedas com base em parâmetros ambientais (vento, densidade do ar) e de carga. 
+               </p>
+              <p>A integração de equações de movimento com resolução numérica iterativa demonstra a aplicação prática de conceitos de física e matemática computacional em interfaces intuitivas.
+                 O projeto foi apresentado por mim no <strong>Rio Innovation Week 2025</strong> como demonstração de capacidade técnica em simulação e desenvolvimento multiplataforma. 
+                 Não participei da equipe de desenvolvimento da aplicação, mas requisitado como facilitador apresentando o projeto para o publico do evento, respondendo perguntas técnicas e destacando os desafios de modelagem e implementação
+                 do meu antigo setor (Simulação do CASNAV).
+              </p>
+              <div class="project-actions">
+                <a href="#" class="btn-teal" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i> Ver Demonstração</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3: Sistema de Análise de Mercado / Storytelling -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-5 project-media">
               <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:100%;min-height:320px;">
-                <img src="portfolio/static/img/temperatura-avancada.jpeg" alt="Temperatura de Mercado KPI" style="object-fit:cover;width:100%;height:100%;border-radius:0 16px 0 0;">
+                <img src="portfolio/static/img/temperatura-avancada.jpeg" alt="Temperatura de Mercado KPI" style="object-fit:cover;width:100%;height:100%;border-radius:16px 0 0 0;">
                 <img src="portfolio/static/img/storeteling-estatico-e-dinamico-dados.jpeg" alt="Storytelling de Dados" style="object-fit:cover;width:100%;height:100%;">
                 <img src="portfolio/static/img/seire-hitorico-analise-sentimeno-noticias.jpeg" alt="Análise de Sentimento" style="object-fit:cover;width:100%;height:100%;">
-                <img src="portfolio/static/img/prametriza%C3%A7%C3%A3obusca.jpeg" alt="Parametrização" style="object-fit:cover;width:100%;height:100%;border-radius:0 0 16px 0;">
+                <img src="portfolio/static/img/prametriza%C3%A7%C3%A3obusca.jpeg" alt="Parametrização" style="object-fit:cover;width:100%;height:100%;border-radius:0 0 0 16px;">
               </div>
             </div>
             <div class="col-lg-7 project-body">
-              <p class="project-number">// Projeto 02 · Inteligência de Mercado</p>
+              <p class="project-number">// Projeto 03 · Inteligência de Mercado</p>
               <h3>Sistema de Análise de Mercado com Temperatura de Informação</h3>
               <div class="mb-3">
                 <span class="tech-badge">Python</span>
@@ -1317,14 +1356,14 @@
           </div>
         </div>
 
-        <!-- Projeto 3: Previsão de Vendas Séries Temporais -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-0">
+        <!-- Projeto 4: Previsão de Vendas Séries Temporais -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="row g-0 flex-lg-row-reverse">
             <div class="col-lg-5 project-media">
-              <img src="portfolio/static/img/aplicaca-previsao-devendas-taxa-de-juros-enoticias-propeht-arima-sarima.jpeg" alt="Previsão de Vendas - Implementos Rodoviários" style="min-height:320px;object-fit:cover;width:100%;border-radius:16px 0 0 16px;">
+              <img src="portfolio/static/img/aplicaca-previsao-devendas-taxa-de-juros-enoticias-propeht-arima-sarima.jpeg" alt="Previsão de Vendas - Implementos Rodoviários" style="min-height:320px;object-fit:cover;width:100%;border-radius:0 16px 16px 0;">
             </div>
             <div class="col-lg-7 project-body">
-              <p class="project-number">// Projeto 03 · Forecasting</p>
+              <p class="project-number">// Projeto 04 · Forecasting</p>
               <h3>Previsão de Demanda — Implementos Rodoviários</h3>
               <div class="mb-3">
                 <span class="tech-badge">Prophet</span>
@@ -1339,9 +1378,9 @@
           </div>
         </div>
 
-        <!-- Projeto 4: CoDe2CGA -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="row g-0 flex-lg-row-reverse">
+        <!-- Projeto 5: CoDe2CGA -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="row g-0">
             <div class="col-lg-5 project-media">
               <div class="img-gallery-3 p-3" style="height:100%;align-content:center;">
                 <img src="portfolio/static/img/tela-login-anlisador-CoDe2CGA-criado.jpeg" alt="Login CoDe2CGA">
@@ -1350,7 +1389,7 @@
               </div>
             </div>
             <div class="col-lg-7 project-body">
-              <p class="project-number">// Projeto 04 · Engenharia de Software com IA</p>
+              <p class="project-number">// Projeto 05 · Engenharia de Software com IA</p>
               <h3>CoDe2CGA — Análise Inteligente de Código Fonte</h3>
               <div class="mb-3">
                 <span class="tech-badge">LLM (GPT/Gemini/Ollama)</span>
@@ -1368,14 +1407,14 @@
           </div>
         </div>
 
-        <!-- Projeto 5: ERP Obras -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="row g-0">
+        <!-- Projeto 6: ERP Obras -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="row g-0 flex-lg-row-reverse">
             <div class="col-lg-5 project-media">
-              <img src="portfolio/static/img/portfolio/app-3.jpg" alt="ERP Construção Civil" style="min-height:280px;object-fit:cover;width:100%;border-radius:16px 0 0 16px;">
+              <img src="portfolio/static/img/portfolio/app-3.jpg" alt="ERP Construção Civil" style="min-height:280px;object-fit:cover;width:100%;border-radius:0 16px 16px 0;">
             </div>
             <div class="col-lg-7 project-body">
-              <p class="project-number">// Projeto 05 · ERP + Multiagente</p>
+              <p class="project-number">// Projeto 06 · ERP + Multiagente</p>
               <h3>ERP para Gestão de Obras com Sistema Multiagente</h3>
               <div class="mb-3">
                 <span class="tech-badge">Django</span>
@@ -1393,14 +1432,14 @@
           </div>
         </div>
 
-        <!-- Projeto 6: Desaprendizado / LGPD -->
-        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="row g-0 flex-lg-row-reverse">
+        <!-- Projeto 7: Desaprendizado / LGPD -->
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="row g-0">
             <div class="col-lg-5 project-media">
-              <img src="portfolio/static/img/portfolio/app-1.jpg" alt="Machine Unlearning LGPD" style="min-height:280px;object-fit:cover;width:100%;border-radius:0 16px 16px 0;">
+              <img src="portfolio/static/img/portfolio/app-1.jpg" alt="Machine Unlearning LGPD" style="min-height:280px;object-fit:cover;width:100%;border-radius:16px 0 0 16px;">
             </div>
             <div class="col-lg-7 project-body">
-              <p class="project-number">// Projeto 06 · ML & Compliance LGPD</p>
+              <p class="project-number">// Projeto 07 · ML & Compliance LGPD</p>
               <h3>Desaprendizado de Máquina com Conformidade LGPD</h3>
               <div class="mb-3">
                 <span class="tech-badge">BERT</span>
@@ -1426,13 +1465,13 @@
       <div class="container">
         <div class="section-title">
           <p class="section-label">Demonstração</p>
-          <h2>Simulador de Paraquedas — Rio Innovation Week 2025</h2>
-          <p style="color:var(--slate)">Assista ao Simulador de Paraquedas em funcionamento, apresentado como caso de uso do Projeto DELFOS no maior evento de inovação do Rio de Janeiro.</p>
+          <h2>Demonstração ERP que esta em desenvovilmento (2026) Multiagente para gerenciamento de Obras com modelos BIM (IFC e GLB)  </h2>
+          <p style="color:var(--slate)">Assista ao video que mostra a aplicação em funcinamento, renderizando modelo BIM de uma obra real e funcionalidades</p>
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="Simulador de Paraquedas — Projeto DELFOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="ERP Construção de Obras, IA e BIM — Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <p style="text-align:center;margin-top:16px;font-size:0.85rem;color:var(--slate)">
               <i class="bi bi-youtube" style="color:#ff0000;margin-right:6px"></i>
@@ -1484,7 +1523,7 @@
               <h4>Cientista de Dados — CASNAV</h4>
               <h5>2025 – Presente</h5>
               <em>Marinha do Brasil — Centro de Análises de Sistemas Navais</em>
-              <p>Atuação no Projeto DELFOS, SAD estratégico do Ministério da Defesa. Construção de pipelines de dados, experimentação com modelos de IA, desenvolvimento de simuladores físicos computacionais e ferramentas de análise operacional. <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank" style="color:var(--teal)">Saiba mais</a>.</p>
+              <p>Atuação no Projeto DELFOS, SAD estratégico do Ministério da Defesa. Construção de pipelines de dados, experimentação com modelos de IA, desenvolvimento de módulos de conformidade LGPD e análise de código legado com IA. <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank" style="color:var(--teal)">Saiba mais</a>.</p>
             </div>
             <div class="resume-item">
               <h4>Marinha do Brasil — CoNavOpEsp</h4>
@@ -1530,7 +1569,7 @@
               <img src="portfolio/static/img/casnav-simulador-paraquedas.png" alt="Simulador de Paraquedas">
               <div class="portfolio-info">
                 <h4>Simulador de Paraquedas</h4>
-                <p>Projeto DELFOS / Rio Innovation Week 2025</p>
+                <p>Projeto independente / Rio Innovation Week 2025</p>
                 <div class="pi-links">
                   <a href="portfolio/static/img/casnav-simulador-paraquedas.png" class="glightbox" data-gallery="pf"><i class="bi bi-zoom-in"></i></a>
                   <a href="#" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i></a>
@@ -1670,7 +1709,7 @@
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content dark">
           <div class="modal-header dark">
-            <h5 class="modal-title" style="color:var(--white);font-family:var(--font-display)">Simulador de Paraquedas — Projeto DELFOS</h5>
+            <h5 class="modal-title" style="color:var(--white);font-family:var(--font-display)">ERP gerenciamento de Obras, IA e BIM</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body p-0">

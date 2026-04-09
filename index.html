@@ -27,12 +27,24 @@
   <!-- Main CSS File -->
   <link href="portfolio/static/css/main.css" rel="stylesheet">
 
-  <!-- Estilo adicional para ícone do ResearchGate (caso não tenha no bootstrap-icons) -->
   <style>
-    /* fallback para researchgate icon */
-    .bi-researchgate::before {
-      content: "\1F4DA"; /* livro como placeholder, melhor usar imagem ou svg real */
-      font-weight: 400;
+    /* Estilo para embed de vídeo responsivo */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -114,6 +126,9 @@
             </p>
             <p>
               A partir de 2016, direcionei minha carreira para desenvolvimento de software e IoT, criando sistemas web para integração de dispositivos industriais. Em 2019, migrei definitivamente para Ciência de Dados, área na qual obtive graduação, MBA e atualmente finalizo o Mestrado em Computação na UFF, com foco em Modelagem Neural e Processamento de Linguagem Natural.
+            </p>
+            <p>
+              Atualmente atuo como Cientista de Dados no CASNAV (Centro de Análises de Sistemas Navais), onde contribuo para o projeto DELFOS — um Sistema de Apoio à Decisão (SAD) estratégico para o Ministério da Defesa. Minha atuação envolve a construção de pipelines de dados, experimentação com modelos de IA e desenvolvimento de ferramentas de simulação, como o simulador de paraquedas apresentado no Rio Innovation Week 2025.
             </p>
             <p class="fst-italic">
               Apaixonado por resolver problemas complexos com rigor científico e boas práticas de engenharia. Acredito em times colaborativos, metodologias ágeis e na aplicação ética da Inteligência Artificial.
@@ -226,8 +241,14 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Experiência Profissional</h3>
             <div class="resume-item">
+              <h4>Cientista de Dados – CASNAV</h4>
+              <h5>2025 – Presente</h5>
+              <p><em>Marinha do Brasil – Centro de Análises de Sistemas Navais</em></p>
+              <p>Atuação no projeto DELFOS, um Sistema de Apoio à Decisão (SAD) estratégico para o Ministério da Defesa. Responsável pela construção de pipelines de dados, experimentação com modelos de IA e desenvolvimento de ferramentas de simulação. Destaque para o Simulador de Paraquedas apresentado no Rio Innovation Week 2025. <a href="https://www.marinha.mil.br/casnav/noticias/2026/03/casnav-celebra-assinatura-do-termo-de-compromisso-do-projeto-delfos-no-ministerio" target="_blank">Saiba mais sobre o DELFOS</a>.</p>
+            </div>
+            <div class="resume-item">
               <h4>Marinha do Brasil – CoNavOpEsp</h4>
-              <h5>2024 – Presente</h5>
+              <h5>2024 – 2025</h5>
               <p><em>Segundo Sargento – Desenvolvimento de soluções de IA para operações de informação</em></p>
               <p>Pesquisa e implementação de LLMs para análise do ambiente informacional, contribuindo para operações psicológicas e defesa cibernética.</p>
             </div>
@@ -269,6 +290,20 @@
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            
+            <!-- Novo Projeto: Simulador de Paraquedas (CASNAV / RIW 2025) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-content h-100">
+                <img src="portfolio/static/img/casnav-simulador-paraquedas.png" class="img-fluid" alt="Simulador de Paraquedas - Rio Innovation Week 2025">
+                <div class="portfolio-info">
+                  <h4>Simulador de Paraquedas</h4>
+                  <p>Ferramenta interativa desenvolvida no CASNAV e apresentada no Rio Innovation Week 2025</p>
+                  <a href="portfolio/static/img/casnav-simulador-paraquedas.png" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="bi bi-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+
             <!-- Projeto: ERP para Construção Civil com Multiagente -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects">
               <div class="portfolio-content h-100">
@@ -321,7 +356,7 @@
               </div>
             </div>
 
-            <!-- Publicação: Cognitivo Humano Expandido -->
+            <!-- Publicação: Convite Revista Vitória nas Sombras -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-publications">
               <div class="portfolio-content h-100">
                 <img src="portfolio/static/img/portfolio/revistaCapa.png" class="img-fluid" alt="Revista Vitória nas Sombras">
@@ -352,8 +387,46 @@
       </div>
     </section><!-- /Portfolio Section -->
 
+    <!-- Seção de Destaque: Vídeo do Simulador de Paraquedas -->
+    <section id="video-demo" class="services section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Demonstração em Vídeo</h2>
+        <p>Conheça o Simulador de Paraquedas, ferramenta interativa desenvolvida para o projeto DELFOS e apresentada no Rio Innovation Week 2025.</p>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="text-center mt-3">
+              <i class="bi bi-youtube"></i> 
+              <a href="https://www.youtube.com/watch?v=4QXH0lLc1wg&t=832s" target="_blank">Assistir no YouTube (a partir do trecho relevante)</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para o vídeo (caso o usuário clique no ícone de play no portfólio) -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="videoModalLabel">Simulador de Paraquedas - Demonstração</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="video-container" style="padding-bottom: 56.25%;">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4QXH0lLc1wg?start=832" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Serviços -->
-    <section id="services" class="services section light-background">
+    <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços & Consultoria</h2>
         <p>Transformo necessidades de negócio em soluções de dados robustas, escaláveis e éticas.</p>
@@ -407,7 +480,7 @@
     </section><!-- /Services Section -->
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="testimonials section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Reconhecimento</h2>
         <p>Feedback de colegas, parceiros e instituições.</p>
@@ -459,7 +532,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
+    <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
         <p>Vamos conversar sobre como posso ajudar seu projeto ou empresa.</p>
@@ -494,7 +567,7 @@
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>2024</span> <strong>Alessandro Pessoa</strong> - Transformando dados em decisões inteligentes</p>
+        <p>© <span>2026</span> <strong>Alessandro Pessoa</strong> - Transformando dados em decisões inteligentes</p>
       </div>
     </div>
   </footer>
@@ -515,5 +588,19 @@
   <script src="portfolio/static/vendor/php-email-form/validate.js"></script>
 
   <script src="portfolio/static/js/main.js"></script>
+
+  <!-- Script para abrir modal ao clicar no ícone de play (garante que o Bootstrap Modal funcione) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const playLinks = document.querySelectorAll('.details-link[data-bs-toggle="modal"]');
+      playLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const modal = new bootstrap.Modal(document.getElementById('videoModal'));
+          modal.show();
+        });
+      });
+    });
+  </script>
 </body>
 </html>
